@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS Grid</title>
+	<style>
+		.wrapper{
+			display:grid;
+			grid-template-columns:repeat(4, 1fr);
+			grid-auto-rows: minmax(100px, auto);
+			grid-gap:1em;
+			
+		}
+		
+		.nested{
+			display:grid;
+			grid-template-columns:repeat(3, 1fr);
+			grid-auto-rows: 145px;
+			grid-gap: 1em;
+		}
+		
+		.wrapper > div {
+		background:#eee;
+		padding:1em;
+		}
+		.wrapper > div:nth-child(odd){
+			background:#ddd;
+		}
+		
+		.nested >div{
+			border:#333 1px solid;
+			padding:1em;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Social Media!</h1>
+	<img src="images/media1.jpg" alt="Social Media" scr="image/media1.jpg">
+	<p>Social media has been popular over the years especially during this pandemic. Some of the interesting facts about the social media will be heredown below!</p>
+	<div class="wrapper">
+		
+		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae fugiat quidem nisi ea voluptates tempora, adipisci distinctio voluptatibus animi eos atque optio dolores beatae, aperiam laudantium corporis. Numquam minima nostrum non enim inventore sint a. Soluta repudiandae animi impedit ex iusto delectus quo distinctio repellat doloribus tenetur, porro rerum minus aliquam deserunt odit fugiat et natus est inventore accusamus suscipit. Quibusdam ea dolorem laborum sed dolorum harum dolor aut. Harum sunt quae similique consequatur praesentium doloremque inventore ea amet asperiores quisquam sed vero, eligendi necessitatibus repellendus quidem eaque possimus corporis!</div>
+		
+		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem incidunt neque minus ab culpa officiis, laudantium adipisci eos provident distinctio perspiciatis deleniti nisi accusamus ipsa perferendis quo quaerat possimus fugit dolorum quod. Fuga in harum illum laborum corporis voluptatum, incidunt repellendus dolor expedita accusamus quo totam ullam deleniti! Corrupti, laboriosam. Maxime numquam adipisci tenetur minima laborum est ab dolorem earum libero rem sed tempore unde, vero exercitationem cum eaque reiciendis iste, doloribus dolor amet perferendis alias modi. Asperiores praesentium eius labore architecto, minima tempore cumque et voluptates doloremque, rerum perferendis.</div>
+		
+		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae fugiat quidem nisi ea voluptates tempora, adipisci distinctio voluptatibus animi eos atque optio dolores beatae, aperiam laudantium corporis. Numquam minima nostrum non enim inventore sint a. Soluta repudiandae animi impedit ex iusto delectus quo distinctio repellat doloribus tenetur, porro rerum minus aliquam deserunt odit fugiat et natus est inventore accusamus suscipit. Quibusdam ea dolorem laborum sed dolorum harum dolor aut. Harum sunt quae similique consequatur praesentium doloremque inventore ea amet asperiores quisquam sed vero, eligendi necessitatibus repellendus quidem eaque possimus corporis!</div>
+		
+		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem incidunt neque minus ab culpa officiis, laudantium adipisci eos provident distinctio perspiciatis deleniti nisi accusamus ipsa perferendis quo quaerat possimus fugit dolorum quod. Fuga in harum illum laborum corporis voluptatum, incidunt repellendus dolor expedita accusamus quo totam ullam deleniti! Corrupti, laboriosam. Maxime numquam adipisci tenetur minima laborum est ab dolorem earum libero rem sed tempore unde, vero exercitationem cum eaque reiciendis iste, doloribus dolor amet perferendis alias modi. Asperiores praesentium eius labore architecto, minima tempore cumque et voluptates doloremque, rerum perferendis.</div>
+		
+		<h2>What do we use in our daily social media lives?</h2>
+	  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nihil dignissimos adipisci earum quisquam repellendus minima culpa, iure, omnis ex nemo impedit iste harum amet nam dolorem autem unde fuga sint quidem voluptatum, iusto alias. Facilis velit illum earum, qui.</div>
+		
+		<img src="images/icons.jpg" alt="Icons" scr="image/icons.jpg">
+		
+		<div class="nested">
+		<div><b tittle="Instagram." style="color:purple">Instagram</b> 	Lorem ipsum dolor sit amet, consectetur.</div>
+		<div><b tittle="Twitter." style="color:cornflowerblue">Twitter</b> 	Lorem ipsum dolor sit amet, consectetur.</div>
+		<div><b tittle="Facebook." style="color:darkblue">Facebook</b> 	Lorem ipsum dolor sit amet, consectetur.</div>
+		<div><b tittle="Snapchat." style="color:deeppink">Snapchat</b> 	Lorem ipsum dolor sit amet, consectetur.</div>
+		<div><b tittle="Pintrest." style="color:black">Pintrest</b> 	Lorem ipsum dolor sit amet, consectetur.</div>
+		<div><b tittle="Reddit." style="color:red">Reddit</b> 	Lorem ipsum dolor sit amet, consectetur.</div>
+		</div>
+	</div>
+	<style>
+		body {background-color:antiquewhite;}
+	</style>
+</body>
+</html>
